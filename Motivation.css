@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    align-items: center;
+    justify-content: center;
+  }
+  .textDiv{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+  }
+
+  .texto{
+    align-self: center;
+    margin-top: 10em;
+    font-size: large;
+  }

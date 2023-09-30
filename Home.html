@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="HomeStyle.css" />
+    
+    <script defer src="./HomeFunctions.js"></script>
+  </head>
+  <div class="body">
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <textarea id="textAreaTweet" style="  width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;" maxlength="300" placeholder="O que você esta pensando?"></textarea>
+        <button class="tweetButton" onclick="tweetar()">Twittar</button>
+      </div>
+    </div>
+
+    <div class="profileHeader">
+      <div class="iconsDiv">
+        <div class="menu" id="menu" data-aberto="false">
+          <span id="menu-trigger" class="menu-trigger">
+            <i class="fa fa-bars" aria-hidden="true" style="font-size: 30px; color: rgb(175, 175, 179)"></i>
+          </span>
+            
+            <ul class="menu-menu">
+              <li><a href='Motivation.html'>Motivação</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="twitterLogoDiv">
+        <img
+          class="twitterLogo"
+          src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png"
+        />
+      </div>
+      <div>
+        <input class="seachInput" placeholder="Search on Twitter" />
+        <img
+          class="miniProfilePicture"
+          src="https://ih1.redbubble.net/image.229538263.0822/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg"
+          alt="150x150"
+        />
+        <button onclick="handleModal()" class="tweetButton">Tweet</button>
+      </div>
+    </div>
+    <div class="profileCard">
+      <div class="profileOutdoor">
+       
+      </div>
+    </div>
+    <div class="statusBar">
+      <div class="profileBoxPicture">
+        <img
+          
+          class="profilePicture"
+          src="https://ih1.redbubble.net/image.229538263.0822/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg"
+          alt="50x50"
+        />
+      </div>
+      <div>
+        <button class="editButton">Editar perfil</button>
+      </div>
+    </div>
+    <div class="perfilInfo">
+      <div class="perfilInfoDiv">
+        <h1 class="userName">Bob</h1>
+        <h3 class="user">@Bob</h3>
+        <p class="descriptionText">
+          Todo dia falando sobre o clima.    
+        </p>
+        <p class="descriptionText">
+
+          3151 Seguindo  &nbsp; &nbsp; &nbsp;     31541 Seguidores
+        </p>
+      </div>
+    </div>
+      <div class="perfilNavBar">
+         <div class="buttonDiv" id="tweets">
+          <button class="navBarButton" onclick="handleTweet()">
+            Post
+          </button>
+        </div>
+        <div class="buttonDiv" id="tweetsandreplays"> 
+          <button class="navBarButton" onclick="handleTweetAndReplays()">
+            Respostas
+          </button>
+        </div>
+
+        <div class="buttonDiv" id="media">
+          <button class="navBarButton" onclick="handleMedia()">
+            Mídias
+          </button>
+        </div>
+
+        <div class="buttonDiv" id="likes">
+          <button class="navBarButton" onclick="handleLikes()">
+            Curtidas
+          </button>
+        </div>
+      </div>
+     </div>
+     <div class="content" id="tweet1">
+      <p class="descriptionText">
+        
+      </p>
+    </div>
+   
+
+  </div>
+</html>
